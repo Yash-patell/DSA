@@ -1,3 +1,5 @@
+# check if the number is palindrome or not
+
 
 # using extracting the last digit method --------------------------------------------------
 # approach 1 - optimised

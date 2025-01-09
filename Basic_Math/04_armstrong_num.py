@@ -1,3 +1,5 @@
+# You are given an integer ‘NUM’ . Your task is to find out whether this number is an Armstrong number or not.
+
 num = int(input("enter num : "))
 
 abs_num = abs(num)
