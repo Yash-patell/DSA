@@ -13,7 +13,7 @@ from collections import *
 from sys import *
 from os import *
 
-n = int(input("enter num :    5")) #we can change 
+n = int(input("enter num :    ")) #we can change 
 
 def fibonacci(n):
     if n ==1 and n ==2:

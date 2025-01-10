@@ -19,3 +19,11 @@ print(count)
 
 #note - The // operator is used for floor division, which divides the numbers and truncates the decimal part to return the largest integer less than or equal to the result.
 #It is particularly useful when you want to work with integers and ignore the fractional part of the division.
+
+
+
+# 1. Modulo Operator (%)
+# Purpose: It returns the remainder when one number is divided by another.
+# 2. Floor Division Operator (//)
+# Purpose: It performs integer (floor) division, which means it divides the numbers and returns the largest integer less than or equal to the result. - it returns quotient
+
