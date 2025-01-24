@@ -1,7 +1,8 @@
 # Given an array of numbers and length n, find the majority element. A majority element is an element that appears more than half of the times in the array. If no such element exists, return 0.
 
 
-def majority_element(arr):
+# time complexity - O(n^2) - outer loop runs n times and for each iteration of outer loop, inner loop also runs n times
+def majority_element(arr): 
     
     n = len(arr)
     
@@ -26,3 +27,34 @@ def majority_element(arr):
 user_array = (input('')) 
 
 print("majortiy element is ",majority_element(user_array) )
+
+
+
+
+#---------------------------------optimise code----------------------------------------------------
+# time complexity - O(n)
+
+
+
+def majorityElement(nums):
+       
+        
+    # Phase 1: Find the candidate
+    candidate = None
+    count = 0
+
+    for num in nums:
+        if count == 0:
+            candidate = num  # Set a new candidate
+            
+        if num == candidate:
+
+            count += 1
+        else :
+            count -=1
+    
+    return candidate
+
+user_input = (input(''))
+
+print(majorityElement(user_input))
