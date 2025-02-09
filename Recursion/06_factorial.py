@@ -33,7 +33,7 @@ def recursive_fact(n, factorial = 1, current_num =1 , result = None):
 
     
 
-print(recursive_fact(6))        
+print(recursive_fact(24))        
 
 
 
