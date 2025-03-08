@@ -6,6 +6,7 @@ n = len(arr)
 for i in range(0,n-1):
     swapped = False #track if swapped happened or not
     
+#n-1-i, bcz after i passes, the last i elements are already sorted, and we don’t need to check them again.    
     for j in range(0, n-1-i):
         
         #arr[j] is the current element
