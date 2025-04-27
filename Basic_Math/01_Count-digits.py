@@ -26,4 +26,3 @@ print(count)
 # Purpose: It returns the remainder when one number is divided by another.
 # 2. Floor Division Operator (//)
 # Purpose: It performs integer (floor) division, which means it divides the numbers and returns the largest integer less than or equal to the result. - it returns quotient
-

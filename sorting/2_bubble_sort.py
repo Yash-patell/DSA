@@ -17,7 +17,7 @@ for i in range(0,n-1):
             
             swapped = True
         
-        elif swapped == False:
+    if not swapped :
             break
         
 
