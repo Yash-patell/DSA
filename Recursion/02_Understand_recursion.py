@@ -7,3 +7,5 @@ def fun(n):
     
 
 fun(10)
+
+#https://www.geeksforgeeks.org/problems/print-gfg-n-times/0

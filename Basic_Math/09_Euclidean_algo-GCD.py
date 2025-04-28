@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
+
 a = int(input("enter a "))
 b = int(input("enter b "))
 
