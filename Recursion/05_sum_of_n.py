@@ -1,11 +1,34 @@
-# Given an integer n, calculate the sum of series 13 + 23 + 33 + 43 + … till n-th term.
+# Sum of n natural numbers
 
-def series(n):
+# without recusrion
+
+def series_sum(n):
     
+    total = 0
     if n ==0:
         return 0
+    else:
+        
+        for i in range(1, n+1):
+        
+            total +=i
+            
+        return total
+            
+print(series_sum(5))
 
-    return n**3 + series(n-1)
 
-result = series(8)
-print(result)
+# with recusrion
+
+def recursive_series(k):
+    
+    if k ==0:
+        return 0
+    else:
+        
+        return k + recursive_series(k-1) # we are doing nothing but n+(n-1) simple
+    
+print(recursive_series(6))
+    
+            
+        
