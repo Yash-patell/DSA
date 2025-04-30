@@ -9,9 +9,9 @@ def reverse_array(arr):
         
         arr[start],arr[end] = arr[end], arr[start]
         
-        return reversing(arr, start+1, end-1)
+        return reversing(arr, start+1, end-1) # move the pointers
     
-    return reversing(arr, 0, len(arr)-1)
+    return reversing(arr, 0, len(arr)-1)  # initial values of starting and ending pointer
     
 reverse_array(arr)
 print(arr)    

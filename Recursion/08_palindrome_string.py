@@ -14,8 +14,8 @@ def is_palindrome(s):
         if new_string[start] != new_string[end]:
             return False 
         
-        return palindorme_check(start +1, end -1 )
+        return palindorme_check(start +1, end -1 )   #move the pointers
     
-    return palindorme_check(0, len(new_string)-1)      
+    return palindorme_check(0, len(new_string)-1)    # initial values 
 
 print(is_palindrome('acb'))      
