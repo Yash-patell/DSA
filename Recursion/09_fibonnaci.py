@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/fibonacci-number/submissions/1621776562/
+
 # return fibonnaci number
 def fib(n):
     if n == 0:
@@ -13,7 +15,7 @@ print(fib(9))
 #Optimized code 
 # using memmory
 
-def fibonnaci_number( n, memo = {}):
+def fibonnaci_calc( n, memo = {}):
     if n in memo:
         return memo[n]
     
@@ -22,11 +24,12 @@ def fibonnaci_number( n, memo = {}):
     
     if n ==1:
         return 1
+    # calculate fibonnaci num - f(n-1) + f(n-2) and store it in memory
+    memo[n] = fibonnaci_calc(n-1, memo) + fibonnaci_calc(n-2, memo)
     
-    memo[n] = fibonnaci_number(n-1, memo) + fibonnaci_number(n-2, memo)
     return memo[n]
 
-print(fibonnaci_number(7))
+print(fibonnaci_calc(7))
 
 
 

@@ -1,4 +1,4 @@
-# Sum of n natural numbers
+# Sum of n natural numbers n+(n-    1)   
 
 # without recusrion
 

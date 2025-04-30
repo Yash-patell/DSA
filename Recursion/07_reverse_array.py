@@ -1,19 +1,17 @@
-def print_array(arr, n):
+# https://www.geeksforgeeks.org/problems/reverse-an-array/0
+arr = [1,2,3,4,5]
+def reverse_array(arr):
     
-    print(" ")
-    for i in range(n):
-        print(arr[i], end = ' ')
-    
-    print()
-
-def reversed_array(arr, start, end):
-    
-    if start<end:
-        arr[start], arr[end] = arr[end],arr[start]
-        reversed_array(arr, start+1, end -1) 
+    def reversing(arr, start, end):
         
-
-arr = [1,2,3,4,5,6,7,9]
-n = len(arr)
-reversed_array(arr, 0, n-1)
-print_array(arr, n)   
+        if start >= end:
+            return
+        
+        arr[start],arr[end] = arr[end], arr[start]
+        
+        return reversing(arr, start+1, end-1)
+    
+    return reversing(arr, 0, len(arr)-1)
+    
+reverse_array(arr)
+print(arr)    
