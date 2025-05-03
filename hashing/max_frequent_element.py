@@ -1,30 +1,28 @@
-#count the max and less frequent element from the array
-
+# you have to return most frequent element by doing k operations 
+# basically we have to return how frequent an element can be in the array by doing max K operations
+# https://leetcode.com/problems/frequency-of-the-most-frequent-element/submissions/1624393835/
+k = 10
 arr = [10,11,12,13,14,15,14,17,22,21,20,21,30,21]
-
-d = {}
-
-for item in arr:
-    d[item] = d.get(item,0)+1
+def max_freq(arr,k):
     
-
-#max
-maxcount = 0
-maxvalue = -1
-
-mincount = len(arr)+1
-minvalue = None
-
-for key,count in d.items():
+    arr.sort()
     
-    if maxcount<count:
-        maxvalue = key
-        maxcount = count
+    # create left and right pointer
+    right, left = 0,0
+    result, total = 0,0
+    
+    while right < len(arr):
+        total += arr[right]
         
-    if mincount>count:
-        minvalue = key
-        mincount = count
+        while arr[right] * (right - left +1) > total + k:
+            
+            total -= arr[left]
+            left += 1
+            
+        result = max(result, right - left +1)
+        right +=1
         
-print(maxcount, maxvalue)
-print("-------------------")
-print(mincount,minvalue)
+    return result
+
+
+print(max_freq(arr, k))
