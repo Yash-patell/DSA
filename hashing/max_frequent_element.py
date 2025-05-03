@@ -13,15 +13,18 @@ def max_freq(arr,k):
 #result will store max frequency that we are going to return, and total will contain total sum of the current window    
     
     while right < len(arr):
-        total += arr[right]
+        total += arr[right] # Expand the window with the right pointer
         
         while arr[right] * (right - left +1) > total + k:
-            
+
+# arr[right] * (right - left +1) - means - cost  to make all numbers in the window equal to the num which is at the right pointer
+
             total -= arr[left]
             left += 1
+# If the cost is too high, we shrink the window from the left until the window is valid again.
             
-        result = max(result, right - left +1)
-        right +=1
+        result = max(result, right - left +1) 
+        right +=1  #Move to the next element and repeat.
         
     return result
 
