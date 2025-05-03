@@ -10,6 +10,7 @@ def max_freq(arr,k):
     # create left and right pointer
     right, left = 0,0
     result, total = 0,0
+#result will store max frequency that we are going to return, and total will contain total sum of the current window    
     
     while right < len(arr):
         total += arr[right]
