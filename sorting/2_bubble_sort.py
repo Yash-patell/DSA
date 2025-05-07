@@ -1,3 +1,4 @@
+# https://www.geeksforgeeks.org/problems/bubble-sort/1
 arr = [23,10,5,2,1,3,42]
 
 n = len(arr)

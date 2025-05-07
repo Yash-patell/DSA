@@ -1,4 +1,6 @@
-arr = [23,10,5,2,1,3,42]
+# https://www.geeksforgeeks.org/problems/selection-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=selection-sort
+
+arr = [23,10,5,2,1,3,42,99,89,65,34,30,32,22]
 
 n = len(arr)
 for i in range (0,n):
