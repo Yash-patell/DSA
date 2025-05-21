@@ -3,7 +3,7 @@ arr = [23,10,5,2,1,3,42]
 
 n = len(arr)
 
-#n-1 bcz last element will be in current position so we dont need to iterate till last element
+#n-1 bcz last element will be in correct position so we dont need to iterate till last element
 for i in range(0,n-1):
     swapped = False #track if swapped happened or not
     
